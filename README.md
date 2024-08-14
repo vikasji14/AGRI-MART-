@@ -1,4 +1,4 @@
-<!-- # AgriMart
+# AgriMart
 
 AgriMart revolutionizes the way you buy and sell agricultural products. Connect directly with farmers, access fresh produce, and enjoy a seamless shopping experience. Empowering farmers, enhancing access. AgriMart – your farm-to-table solution.
 
@@ -120,6 +120,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 
 For any inquiries or feedback, please contact us at:
-- **Email:** navipandey67@gmail.com
+- **Email:** agrimart@gmail.com
 
-Thank you for using AgriMart – your farm-to-table solution! -->
+Thank you for using AgriMart – your farm-to-table solution!
