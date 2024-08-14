@@ -1,11 +1,16 @@
 import React from "react";
-  import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { useAuth } from "../../context/auth";
 import toast from "react-hot-toast";
 import SearchInput from "../Form/SearchInput";
 import useCategory from "../../hooks/useCategory";
 import { useCart } from "../../context/cart";
 import { Badge } from "antd";
+import { ShoppingCartOutlined } from '@ant-design/icons';
+import { AppstoreOutlined } from '@ant-design/icons';
+import { UserOutlined, DashboardOutlined, LogoutOutlined } from '@ant-design/icons';
+
+
 
 const Header = () => {
   const [auth, setAuth] = useAuth();
@@ -37,17 +42,17 @@ const Header = () => {
           </button>
           <div className="collapse navbar-collapse " id="navbarTogglerDemo01">
             <Link to="/" className="navbar-brand">
-            🌱 AgriMart
+              🌱 AgriMart
             </Link>
 
             <ul className="navbar-nav ms-auto gap-3 mb-2 mb-lg-0">
               <SearchInput />
 
-
               {!auth?.user ? (
                 <>
                   <li className="nav-item">
                     <NavLink to="/login" className="nav-link">
+                      <UserOutlined style={{ marginRight: '8px' }} />
                       Login
                     </NavLink>
                   </li>
@@ -62,14 +67,13 @@ const Header = () => {
                       data-bs-toggle="dropdown"
                       style={{ border: "none" }}
                     >
+                      <UserOutlined style={{ marginRight: '8px' }} />
                       {auth?.user?.name}
                     </NavLink>
                     <ul className="dropdown-menu">
                       <li>
                         <NavLink
-                          to={`/dashboard/${
-                            auth?.user?.role === 1 ? "admin" : "user"
-                          }`}
+                          to={`/dashboard/${auth?.user?.role === 1 ? "admin" : "user"}`}
                           className="dropdown-item"
                         >
                           Dashboard
@@ -90,14 +94,17 @@ const Header = () => {
               )}
               <li className="nav-item dropdown">
                 <Link
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle d-flex align-items-center"
                   to={"/categories"}
                   data-bs-toggle="dropdown"
                 >
+                  <AppstoreOutlined style={{ fontSize: '22px', marginRight: '8px' }} />
                   Categories
                 </Link>
+
                 <ul className="dropdown-menu">
                   <li>
+
                     <Link className="dropdown-item" to={"/categories"}>
                       All Categories
                     </Link>
@@ -113,17 +120,19 @@ const Header = () => {
                     </li>
                   ))}
                 </ul>
-                
+
               </li>
               <li className="nav-item">
-                <NavLink to="/cart" className="nav-link">
+                <NavLink to="/cart" className="nav-link d-flex align-items-center">
+                  <ShoppingCartOutlined style={{ fontSize: '24px', marginRight: '8px' }} />
                   <Badge count={cart?.length} showZero offset={[10, -5]}>
-                    <span >Cart</span>
+                    <span>Cart</span>
                   </Badge>
                 </NavLink>
               </li>
 
-             
+
+
 
             </ul>
           </div>

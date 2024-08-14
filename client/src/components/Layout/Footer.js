@@ -7,6 +7,7 @@ const Footer = () => {
         <Link to="/about">About</Link>|<Link to="/contact">Contact</Link>|
         <Link to="/policy">Privacy Policy</Link>
       </p>
+      <p className="text-center">Muzaffarpur Institute of Technology</p>
     </div>
   );
 };

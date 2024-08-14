@@ -8,6 +8,8 @@ import toast from "react-hot-toast";
 import Layout from "./../components/Layout/Layout";
 import { AiOutlineReload } from "react-icons/ai";
 import "../styles/Homepage.css";
+import { Carousel } from 'react-bootstrap';
+
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -109,18 +111,54 @@ const HomePage = () => {
   return (
     <Layout title={"ALL Products - Best offers "}>
       {/* banner image */}
-      <img
-        src="/images/farm3.jpg"
-        className="banner-img"
-        alt="bannerimage"
-        width={"100%"}
-      />
+      <Carousel>
+        <Carousel.Item style={{ height: "600px" }}>
+          <img
+            className="d-block w-100"
+            src="/images/farm3.jpg"
+            alt="First slide"
+            style={{ objectFit: 'cover', height: '100%' }}
+          />
+        </Carousel.Item>
+        <Carousel.Item style={{ height: "600px" }}>
+          <img
+            className="d-block w-100"
+            src="/images/form4.png"
+            alt="Second slide"
+            style={{ objectFit: 'cover', height: '100%' }}
+          />
+        </Carousel.Item>
+        <Carousel.Item style={{ height: "600px" }}>
+          <img
+            className="d-block w-100"
+             src="/images/form5.png"
+            alt="Third slide"
+            style={{ objectFit: 'cover', height: '100%' }}
+          />
+        </Carousel.Item>
+        <Carousel.Item style={{ height: "600px" }}>
+          <img
+            className="d-block w-100"
+              src="/images/form6.png"
+            alt="Fourth slide"
+            style={{ objectFit: 'cover', height: '100%' }}
+          />
+        </Carousel.Item>
+        <Carousel.Item style={{ height: "600px" }}>
+          <img
+            className="d-block w-100"
+            src="/images/farm3.jpg"
+            alt="Fifth slide"
+            style={{ objectFit: 'cover', height: '100%' }}
+          />
+        </Carousel.Item>
+      </Carousel>
       {/* banner image */}
 
 
-      
-      <div className="container-fluid row mt-3 home-page">
-        <div className="col-md-3 filters">
+
+      <div className="container-fluid row mt-4 home-page">
+        <div className="col-md-2 items-center mx-auto filters">
           <h4 className="text-center">Filter By Category</h4>
           <div className="d-flex flex-column">
             {categories?.map((c) => (
@@ -133,7 +171,7 @@ const HomePage = () => {
             ))}
           </div>
           {/* price filter */}
-          <h4 className="text-center mt-4">Filter By Price</h4>
+          <h4 className="text-center ">Filter By Price</h4>
           <div className="d-flex flex-column">
             <Radio.Group onChange={(e) => setRadio(e.target.value)}>
               {Prices?.map((p) => (
@@ -153,7 +191,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="col-md-9 ">
-          <h1 className="text-center">All Products</h1>
+          <h1 className="text-center"> Products</h1>
           <div className="d-flex flex-wrap">
             {products?.map((p) => (
               <div className="card m-2" key={p._id}>
@@ -214,7 +252,7 @@ const HomePage = () => {
                 ) : (
                   <>
                     {" "}
-                    Loadmore <AiOutlineReload />
+                    More... <AiOutlineReload />
                   </>
                 )}
               </button>
