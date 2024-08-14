@@ -131,7 +131,7 @@ const Register = () => {
           <button type="submit" className="btn btn-primary">
             REGISTER
           </button>
-          <button onClick={handleSignIn} style={{ height: '37px' }}>Sign In With Google</button>
+          {/* <button onClick={handleSignIn} style={{ height: '37px' }}>Sign In With Google</button> */}
         </form>
       </div>
     </Layout>
