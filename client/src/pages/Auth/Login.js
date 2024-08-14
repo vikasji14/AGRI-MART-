@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Layout from "./../../components/Layout/Layout";
+import { NavLink, Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate, useLocation } from "react-router-dom";
 import toast from "react-hot-toast";
@@ -82,6 +83,18 @@ const Login = () => {
           <button type="submit" className="btn btn-primary">
             LOGIN
           </button>
+
+
+
+          <div className="pt-4">
+         
+         <span className="pt-4">Don't have an account? </span>
+         <NavLink to="/register" className="text-blue-500 hover:underline ">
+            Register 
+         </NavLink>
+      
+       </div>
+
         </form>
       </div>
     </Layout>

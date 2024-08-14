@@ -8,6 +8,7 @@ import SignIn from "../../googleSignin/signin";
 import { auth, provider } from "./config";
 import { onAuthStateChanged } from "firebase/auth";
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { NavLink, Link } from "react-router-dom";
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -62,7 +63,7 @@ const Register = () => {
         <form onSubmit={handleSubmit}>
           <h4 className="title">REGISTER FORM</h4>
           <div className="mb-3">
-            <input
+            <input 
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -131,11 +132,27 @@ const Register = () => {
           <button type="submit" className="btn btn-primary">
             REGISTER
           </button>
+          <div className="pt-4">
+         
+          <span className="pt-4">Already have an account? </span>
+          <NavLink to="/login" className="text-blue-500 hover:underline ">
+            Login 
+          </NavLink>
+       
+        </div>
           {/* <button onClick={handleSignIn} style={{ height: '37px' }}>Sign In With Google</button> */}
         </form>
       </div>
+
+    
     </Layout>
   );
 };
 
 export default Register;
+
+
+
+
+
+
