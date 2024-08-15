@@ -109,7 +109,7 @@ const HomePage = () => {
     }
   };
   return (
-    <Layout title={"ALL Products - Best offers "}>
+    <Layout title={"ALL Products - GREENMART "}>
       {/* banner image */}
       <Carousel>
         <Carousel.Item style={{ height: "600px" }}>

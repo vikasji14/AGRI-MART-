@@ -15,7 +15,7 @@ const Policy = () => {
         <div className="col-md-6">
           <h2>Privacy Policy</h2>
           <p>
-            At Agri-Mart, we collect personal and payment information to process your orders
+            At Green-Mart, we collect personal and payment information to process your orders
             and enhance our services.
           </p>
           <p>

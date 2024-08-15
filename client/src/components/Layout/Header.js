@@ -42,7 +42,7 @@ const Header = () => {
           </button>
           <div className="collapse navbar-collapse " id="navbarTogglerDemo01">
             <Link to="/" className="navbar-brand">
-              🌱 AgriMart
+              🌱 GreenMart
             </Link>
 
             <ul className="navbar-nav ms-auto gap-3 mb-2 mb-lg-0">
