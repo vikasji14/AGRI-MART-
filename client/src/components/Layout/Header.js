@@ -51,11 +51,12 @@ const Header = () => {
               {!auth?.user ? (
                 <>
                   <li className="nav-item">
-                    <NavLink to="/login" className="nav-link">
+                    <NavLink to="/login" className="nav-link" >
                       <UserOutlined style={{ marginRight: '8px' }} />
                       Login
                     </NavLink>
                   </li>
+
                 </>
               ) : (
                 <>

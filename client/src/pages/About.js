@@ -16,9 +16,7 @@ const About = () => {
           <h3> WE ARE GREENMART</h3>
           <p className="text-justify mt-2">
 
-          GreenMart represents a visionary endeavor led by a group of third-year engineering undergraduates. Its primary mission is to revolutionize the agricultural sector by harnessing the power of cutting-edge technology. This initiative is driven by a steadfast commitment to narrowing the divide between farmers and consumers, making it more than just a marketplace – it's a transformative bridge connecting the agricultural ecosystem with modern technological tools.
-
-            This website caters to the needs of consumers as well as the farmers where they can see latest news and articles on farming,shop for farm equipments and fertilizers and also set a price for the items they sell.
+          GreenMart is an innovative initiative spearheaded by a group of visionary fourth-year engineering students, aimed at revolutionizing the agricultural sector through the integration of advanced technology. With a deep commitment to bridging the gap between farmers and consumers, GreenMart aspires to be more than just a marketplace—it's a dynamic platform designed to transform the entire agricultural ecosystem. The website serves both consumers and farmers by offering the latest news and articles on farming, a comprehensive marketplace for purchasing farm equipment and fertilizers, and a unique feature that empowers farmers to set their own prices for the products they sell. Through these efforts, GreenMart is fostering a more connected, efficient, and sustainable future for agriculture.
           </p>
         </div>
       </div>
