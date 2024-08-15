@@ -8,7 +8,7 @@ import { useCart } from "../../context/cart";
 import { Badge } from "antd";
 import { ShoppingCartOutlined } from '@ant-design/icons';
 import { AppstoreOutlined } from '@ant-design/icons';
-import { UserOutlined, DashboardOutlined, LogoutOutlined } from '@ant-design/icons';
+import { UserOutlined } from '@ant-design/icons';
 
 
 
@@ -133,7 +133,6 @@ const Header = () => {
 
 
 
-
             </ul>
           </div>
         </div>
@@ -143,3 +142,8 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
+
+
