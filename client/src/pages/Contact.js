@@ -15,10 +15,10 @@ const Contact = () => {
         <div className="col-md-4">
           <h1 className="bg-dark p-2 text-white text-center">CONTACT US</h1>
           <p className="text-justify mt-2">
-          Agri Mart
+          GreenMart
           </p>
           <p className="mt-3">
-            <BiMailSend /> :agrimart@gmail.com
+            <BiMailSend /> :greenmart@gmail.com
           </p>
           <p className="mt-3">
             <BiPhoneCall /> : +91 **********
